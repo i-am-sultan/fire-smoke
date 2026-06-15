@@ -1,0 +1,48 @@
+# pipeline.yaml
+pipeline:
+  # Define the order of execution. Comment out stages you want to skip.
+  stages:
+    - standardize
+    - clean
+    - deduplicate
+    - eda
+    - train
+    - benchmark
+    - export
+    - inference
+
+dataset:
+  dir: "datasets/sample-dataset/"
+  classes: ["fire", "smoke"]
+  # map: ["0:0", "1:1", "2:1"] # Optional class remapping
+  dedup_threshold: 0.985
+  dedup_batch_size: 64
+
+training:
+  data_yaml: "datasets/sample-dataset/data.yaml"
+  weights: "weights/yolov26n/yolo26n.pt"
+  results_dir: "results/"
+  name: "FS-Pipeline-Run"
+  epochs: 100
+  patience: 20
+  imgsz: 640
+  batch_size: 64
+  workers: 8
+  device: "auto"
+  debug: true   # Set to true for a rapid 2-epoch test
+
+benchmark:
+  warmup: 10
+  runs: 100
+
+export:
+  formats: ["onnx", "tensorrt"]
+  half: true
+  int8: false
+  dynamic: false
+  opset: 17
+
+inference:
+  source: "videos/test.mp4"
+  conf: 0.5
+  split_frame: false

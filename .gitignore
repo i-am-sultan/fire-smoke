@@ -1,0 +1,8 @@
+results/*
+!results/.gitkeep
+*.log
+.git_local
+.git_github
+.git_public
+venv
+*.cache
