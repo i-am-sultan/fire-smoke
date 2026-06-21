@@ -16,11 +16,10 @@ This repository provides a complete workflow for transforming raw datasets into 
 ---
 ## Sample Video Demonstration
  
-[![Demo video thumbnail](videos/image.png)](videos/merged_output.mp4)
-[Watch video (MP4)](videos/merged_output.mp4)
+[![Demo video thumbnail](output/image.png)](output/merged_output.mp4)
+[Watch video (MP4)](output/merged_output.mp4)
 
----
-
+---output
 ## 🎯 Repository Philosophy
 
 Most computer vision repositories focus primarily on model training. This repository emphasizes the complete machine learning lifecycle:
