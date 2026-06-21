@@ -14,6 +14,13 @@ This repository provides a complete workflow for transforming raw datasets into 
 > Users are expected to prepare their own datasets and train models using the provided pipeline. Refer to the documentation under `docs/` for the complete workflow.
 
 ---
+## Sample Video Demonstration
+
+![Demo video](videos/merged-output.mp4)
+[Watch video](videos/merged-output.mp4)
+
+
+---
 
 ## 🎯 Repository Philosophy
 

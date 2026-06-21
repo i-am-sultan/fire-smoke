@@ -6,3 +6,4 @@ results/*
 .git_public
 venv
 *.cache
+MONETIZATION_PLAN.md
