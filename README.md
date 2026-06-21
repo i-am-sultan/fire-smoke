@@ -16,8 +16,8 @@ This repository provides a complete workflow for transforming raw datasets into 
 ---
 ## Sample Video Demonstration
 
-![Demo video](videos/merged-output.mp4)
-[Watch video](videos/merged-output.mp4)
+![Demo video](output/merged_output.mp4)
+<!-- [Watch video](output/merged_output.mp4) -->
 
 
 ---
