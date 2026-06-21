@@ -15,11 +15,9 @@ This repository provides a complete workflow for transforming raw datasets into 
 
 ---
 ## Sample Video Demonstration
-
-<video controls width="720" height="405">
-  <source src="output/merged_output.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+ 
+[![Demo video thumbnail](videos/image.png)](videos/merged_output.mp4)
+[Watch video (MP4)](videos/merged_output.mp4)
 
 ---
 
